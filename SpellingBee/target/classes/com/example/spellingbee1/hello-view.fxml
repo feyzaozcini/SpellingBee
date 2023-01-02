@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spellingbee1.HelloController">
+   <children>
+      <Button fx:id="btdDelete" cache="true" layoutX="96.0" layoutY="524.0" mnemonicParsing="false" onAction="#DeleteClicked" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: 220;210;50;" text="Sil">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnter" cache="true" layoutX="289.0" layoutY="524.0" mnemonicParsing="false" onAction="#btnEnterClicked" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: 220;210;50;" text="Ekle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnChange" cache="true" layoutX="188.0" layoutY="524.0" mnemonicParsing="false" onAction="#SuffleBtn" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: 220;210;50;" text="Karıştır">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfWordEnter" layoutX="92.0" layoutY="181.0" onAction="#ClickedText" prefHeight="42.0" prefWidth="271.0" promptText="...">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Polygon fx:id="shp7" fill="#fff624" layoutX="275.0" layoutY="458.0" points="-36.00001525878906, -62.20001220703125, -70.39997863769531, -62.19999694824219, -85.40000915527344, -87.0, -70.39997863769531, -112.60000610351562, -36.00001525878906, -112.60000610351562, -19.800003051757812, -87.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="shp6" fill="#eaebef" layoutX="225.0" layoutY="433.0" points="-36.00001525878906, -62.20001220703125, -70.39997863769531, -62.19999694824219, -85.40000915527344, -87.0, -70.39997863769531, -112.60000610351562, -36.00001525878906, -112.60000610351562, -19.800003051757812, -87.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="shp2" fill="#eaebef" layoutX="327.0" layoutY="433.0" points="-36.00001525878906, -62.20001220703125, -71.80000305175781, -62.399993896484375, -88.59999084472656, -87.0, -72.80000305175781, -112.39999389648438, -36.00001525878906, -112.60000610351562, -19.800003051757812, -87.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="shp1" fill="#eaebef" layoutX="274.0" layoutY="408.0" points="-36.00001525878906, -62.20001220703125, -70.39997863769531, -62.19999694824219, -85.40000915527344, -87.0, -70.39997863769531, -112.60000610351562, -36.00001525878906, -112.60000610351562, -19.800003051757812, -87.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="shp5" fill="#eaebef" layoutX="225.0" layoutY="483.0" points="-36.00001525878906, -62.20001220703125, -70.39997863769531, -62.19999694824219, -85.40000915527344, -87.0, -70.39997863769531, -112.60000610351562, -36.00001525878906, -112.60000610351562, -19.800003051757812, -87.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="shp4" fill="#eaebef" layoutX="273.0" layoutY="508.0" points="-36.00001525878906, -62.20001220703125, -70.39997863769531, -62.19999694824219, -85.40000915527344, -87.0, -70.39997863769531, -112.60000610351562, -36.00001525878906, -112.60000610351562, -18.599990844726562, -87.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="shp3" fill="#eaebef" layoutX="328.0" layoutY="483.0" points="-36.00001525878906, -62.20001220703125, -73.59999084472656, -62.399993896484375, -89.59999084472656, -87.0, -72.80000305175781, -112.39999389648438, -36.00001525878906, -112.60000610351562, -19.800003051757812, -87.0" stroke="BLACK" strokeType="INSIDE" />
+      <ListView fx:id="lst" layoutX="572.0" layoutY="185.0" prefHeight="378.0" prefWidth="297.0" />
+      <Label layoutX="572.0" layoutY="121.0" prefHeight="32.0" prefWidth="80.0" text="Puan:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtScore" disable="true" layoutX="652.0" layoutY="117.0" prefHeight="26.0" prefWidth="201.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn1" layoutX="251.0" layoutY="324.0" mnemonicParsing="false" onAction="#ClickedBtn1" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn2" layoutX="252.0" layoutY="374.0" mnemonicParsing="false" onAction="#ClickedBtn2" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn3" layoutX="200.0" layoutY="399.0" mnemonicParsing="false" onAction="#ClickedBtn3" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn4" layoutX="151.0" layoutY="374.0" mnemonicParsing="false" onAction="#ClickedBtn4" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn5" layoutX="151.0" layoutY="324.0" mnemonicParsing="false" onAction="#ClickedBtn5" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn6" layoutX="201.0" layoutY="299.0" mnemonicParsing="false" onAction="#ClickedBtn6" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btn7" layoutX="201.0" layoutY="349.0" mnemonicParsing="false" onAction="#ClickedBtn7" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="btnGiris" layoutX="375.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnGirisClicked" style="-fx-border-color: black; -fx-background-color: yellow;" text="Hızlı Başla">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: gray; -fx-border-color: black;" text="&lt;- Anasayfa">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnAnswer" layoutX="810.0" layoutY="653.0" mnemonicParsing="false" onAction="#switchToScene3" text="Cevaplar" />
+      <Button fx:id="btnKendin" layoutX="214.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnKendin" style="-fx-border-color: black; -fx-background-color: yellow;" text="Kendin Başla">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtGirilen" layoutX="193.0" layoutY="54.0" promptText="7 Farklı harf Giriniz..." visible="false" />
+      <Button fx:id="btnGirilen" layoutX="295.0" layoutY="91.0" mnemonicParsing="false" onAction="#girilenHarfAktar" text="Başlat" visible="false" />
+   </children>
+</AnchorPane>
